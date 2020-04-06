@@ -1,0 +1,15 @@
+﻿@model TrainingWebsite.Models.ViewModels.HomeViewModel
+
+
+<partial name="_Carousel" />
+
+<h2>Products Of The Week</h2>
+<h4>
+    Our Weekly Selection -  Just For You!
+</h4>
+<div class="row">
+    @foreach (var products in Model.ProductsOfTheWeek)
+    {
+        <partial name="_ProductCard" model="products" />
+    }
+</div>
