@@ -51,10 +51,10 @@ namespace TrainingWebsite.Models
                 ShortDescription = "Create your own personalised Make-up bag",
                 LongDescription = " Choose your color, choose your style and your message and we will create it for your perfect gift",
                 categoryId = 2,
-                ImageUrl = "pic-2.jpg",
+                ImageUrl = "~/Images/pic-2.jpg",
                 InStock = true,
                 IsProductsOfTheWeek = true,
-                ImageThumbnailUrl = "pic-2.jpg",
+                ImageThumbnailUrl = "~/Images/pic-2.jpg",
             });
             modelBuilder.Entity<Products>().HasData(new Products
             {
@@ -63,10 +63,10 @@ namespace TrainingWebsite.Models
                 ShortDescription = "Create your own personalised Water Bottle",
                 LongDescription = " Choose your color, choose your style and your message and we will create it for your perfect gift",
                 categoryId = 2,
-                ImageUrl = "pic-3.jpg",
+                ImageUrl = "~/Images/pic-3.jpg",
                 InStock = true,
                 IsProductsOfTheWeek = true,
-                ImageThumbnailUrl = "pic-3.jpg",
+                ImageThumbnailUrl = "~/Images/pic-3.jpg",
             });
             modelBuilder.Entity<Products>().HasData(new Products
             {
@@ -75,10 +75,10 @@ namespace TrainingWebsite.Models
                 ShortDescription = "Create your own personalised Containers",
                 LongDescription = " Choose your color, choose your style and your message and we will create it for your perfect gift",
                 categoryId = 2,
-                ImageUrl = "pic-1.jpg",
+                ImageUrl = "~/Images/pic-1.jpg",
                 InStock = true,
                 IsProductsOfTheWeek = true,
-                ImageThumbnailUrl = "pic-1.jpg",
+                ImageThumbnailUrl = "~/Images/pic-1.jpg",
             });
         }
     }

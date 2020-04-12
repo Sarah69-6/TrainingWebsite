@@ -58,10 +58,10 @@ namespace TrainingWebsite.Migrations
                 columns: new[] { "ProductId", "ImageThumbnailUrl", "ImageUrl", "InStock", "IsProductsOfTheWeek", "LongDescription", "Price", "ProductName", "ShortDescription", "categoryId" },
                 values: new object[,]
                 {
-                    { 1, "Images/pic-5.jpg","Images/pic-5.jpg", true, true, " Choose your color, choose your style and your message and we will create it for your perfect gift", 10m, "Personalised Baby Vest", "Create your own personalised baby vest", 1 },
-                    { 2, "Images/pic-2.jpg", "Images/pic-2.jpg", true, true, " Choose your color, choose your style and your message and we will create it for your perfect gift", 10m, "Personalised Make-up Bag", "Create your own personalised Make-up bag", 2 },
-                    { 3, "Images/pic-3.jpg", "Images/pic-3.jpg", true, true, " Choose your color, choose your style and your message and we will create it for your perfect gift", 10m, "Personalised Water Bottle", "Create your own personalised Water Bottle", 2 },
-                    { 4, "Images/pic-1.jpg", "Images/pic-1.jpg", true, true, " Choose your color, choose your style and your message and we will create it for your perfect gift", 10m, "Personalised Container", "Create your own personalised Containers", 2 }
+                    { 1, "~/Images/pic-5.jpg","~/Images/pic-5.jpg", true, true, " Choose your color, choose your style and your message and we will create it for your perfect gift", 10m, "Personalised Baby Vest", "Create your own personalised baby vest", 1 },
+                    { 2, "~/Images/pic-2.jpg", "~/Images/pic-2.jpg", true, true, " Choose your color, choose your style and your message and we will create it for your perfect gift", 10m, "Personalised Make-up Bag", "Create your own personalised Make-up bag", 2 },
+                    { 3, "~/Images/pic-3.jpg", "~/Images/pic-3.jpg", true, true, " Choose your color, choose your style and your message and we will create it for your perfect gift", 10m, "Personalised Water Bottle", "Create your own personalised Water Bottle", 2 },
+                    { 4, "~/Images/pic-1.jpg", "~/Images/pic-1.jpg", true, true, " Choose your color, choose your style and your message and we will create it for your perfect gift", 10m, "Personalised Container", "Create your own personalised Containers", 2 }
                 });
         }
 

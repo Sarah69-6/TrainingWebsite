@@ -10,8 +10,8 @@ using TrainingWebsite.Models;
 namespace TrainingWebsite.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20200412094031_NewInfo")]
-    partial class NewInfo
+    [Migration("20200412125640_SeedDataUpdates")]
+    partial class SeedDataUpdates
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -325,10 +325,12 @@ namespace TrainingWebsite.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ImageThumbnailUrl")
-                        .HasColumnType("varchar(MAX)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.Property<string>("ImageUrl")
-                        .HasColumnType("varchar(MAX)");
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.Property<bool>("InStock")
                         .HasColumnType("bit");
@@ -380,8 +382,8 @@ namespace TrainingWebsite.Migrations
                         new
                         {
                             ProductId = 2,
-                            ImageThumbnailUrl = "pic-2.jpg",
-                            ImageUrl = "pic-2.jpg",
+                            ImageThumbnailUrl = "~/Images/pic-2.jpg",
+                            ImageUrl = "~/Images/pic-2.jpg",
                             InStock = true,
                             IsProductsOfTheWeek = true,
                             LongDescription = " Choose your color, choose your style and your message and we will create it for your perfect gift",
@@ -393,8 +395,8 @@ namespace TrainingWebsite.Migrations
                         new
                         {
                             ProductId = 3,
-                            ImageThumbnailUrl = "pic-3.jpg",
-                            ImageUrl = "pic-3.jpg",
+                            ImageThumbnailUrl = "~/Images/pic-3.jpg",
+                            ImageUrl = "~/Images/pic-3.jpg",
                             InStock = true,
                             IsProductsOfTheWeek = true,
                             LongDescription = " Choose your color, choose your style and your message and we will create it for your perfect gift",
@@ -406,8 +408,8 @@ namespace TrainingWebsite.Migrations
                         new
                         {
                             ProductId = 4,
-                            ImageThumbnailUrl = "pic-1.jpg",
-                            ImageUrl = "pic-1.jpg",
+                            ImageThumbnailUrl = "~/Images/pic-1.jpg",
+                            ImageUrl = "~/Images/pic-1.jpg",
                             InStock = true,
                             IsProductsOfTheWeek = true,
                             LongDescription = " Choose your color, choose your style and your message and we will create it for your perfect gift",

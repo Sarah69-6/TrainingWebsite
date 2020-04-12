@@ -5,6 +5,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\Images\blanket.jpg" />
+    <None Include="wwwroot\Images\daffodil.jpg" />
+    <None Include="wwwroot\Images\hello_world_1024x1024.jpg" />
+    <None Include="wwwroot\Images\logo.png" />
+    <None Include="wwwroot\Images\pic-1.jpg" />
+    <None Include="wwwroot\Images\pic-2.jpg" />
+    <None Include="wwwroot\Images\pic-3.jpg" />
+    <None Include="wwwroot\Images\pic-3new.jpg" />
+    <None Include="wwwroot\Images\pic-4.jpg" />
+    <None Include="wwwroot\Images\pic-5.jpg" />
+    <None Include="wwwroot\Images\pic-6.jpg" />
+    <None Include="wwwroot\Images\pic-7.jpg" />
+    <None Include="wwwroot\Images\pic-8.jpg" />
+    <None Include="wwwroot\Images\pic-9.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="bootstrap" Version="4.4.1" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.3" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.3" />
