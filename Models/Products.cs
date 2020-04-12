@@ -20,9 +20,9 @@ namespace TrainingWebsite.Models
         public string LongDescription { get; set; }
         [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; }
-        [MaxLength(50)]
+        [Column(TypeName = "varchar(MAX)")]
         public string ImageUrl { get; set; }
-        [MaxLength(50)]
+        [Column(TypeName = "varchar(MAX)")]
         public string ImageThumbnailUrl { get; set; }
         public bool InStock { get; set; }
         public bool IsProductsOfTheWeek { get; set; }

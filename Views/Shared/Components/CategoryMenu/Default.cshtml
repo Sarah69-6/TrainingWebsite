@@ -1,19 +1,20 @@
 ﻿@model IEnumerable<TrainingWebsite.Models.ViewModels.Category> 
 
-<li class="dropdown">
-    <a asp-controller="Products"
-       asp-action="Index"
-       class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" asp-controller="Products">
+       Products <b class="caret"></b>
+    </a>
     <ul class="dropdown-menu">
         @foreach (var category in Model)
         {
-            <li>
+            <li class="dropdown-item">
                 <a asp-controller="Products" asp-action="List"
                    asp-route-category="@category.CategoryName">@category.CategoryName</a>
             </li>
         }
         <li class="divider"></li>
-        <li>
+        <li class="dropdown-item">
             <a asp-controller="Products" asp-action="List" asp-route-Category="">View all Products</a>
         </li>
     </ul>
